@@ -1,0 +1,55 @@
+.Homecard {
+    width: 215px;
+    height: 175px;
+    padding: 50px;
+    background-color: white;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    border: solid 1px lightgray;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: lightgray;
+    border-right-color: lightgray;
+    border-bottom-color: lightgray;
+    border-left-color: lightgray;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-radius: .25rem;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.03);
+}
+
+.Homecard:hover {
+    box-shadow: 0px 0px 10px #000;
+}
+
+.Hometext {
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: 'UltimaPro';
+}
+
+.Homeicon {
+    color: rgb(18, 102, 241);
+    font-size: 50px;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
