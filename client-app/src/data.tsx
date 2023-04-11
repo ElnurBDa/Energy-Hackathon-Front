@@ -94,7 +94,7 @@ export function convertDataMonth(input: InputDataMonth): OutputData {
     };
 };
 
-export const ManatKiloWatt = 3;
+export const ManatKiloWatt = 0.15;
 
 
 export function getTotal(dataset:number[]):number{
