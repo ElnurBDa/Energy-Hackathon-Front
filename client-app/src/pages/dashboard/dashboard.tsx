@@ -3,7 +3,7 @@ import {Line} from 'react-chartjs-2';
 import './dashboard.css'
 import { Chart, registerables } from 'chart.js';
 import { Button } from "react-bootstrap";
-import { ManatKiloWatt, chartDatasApril, chartDatasAprilDays, convertDataDay, convertDataMonth, getTotal } from "../../data";
+import { ManatKiloWattMax, ManatKiloWattMin, chartDatasApril, chartDatasAprilDays, convertDataDay, convertDataMonth, getTotal } from "../../data";
 Chart.register(...registerables);
 
 export default function Dashboard() {
@@ -57,7 +57,7 @@ export default function Dashboard() {
                 <Button className="btn btn-primary ripple-surface" onClick={() => setMode(+!mode)}>{mode?<>ayliq</>:<>gunluk</>} serfiyyat</Button>
                 {mode?<></>:<input type="number" value ={n} onChange={(e) => handleNChange(+(e.target.value))}/>}
                 <h4 style={{left:'0px'}}>Total Energy:{total.toFixed(2)} kilowatt</h4>
-                <h4 style={{left:'0px'}}>Total Price: {(total*ManatKiloWatt).toFixed(2)} manat</h4>
+                <h4 style={{left:'0px'}}>Total Price: {(total>300? total*ManatKiloWattMax: total*ManatKiloWattMin).toFixed(2)} manat</h4>
             </div>
         </div>
     </>)
