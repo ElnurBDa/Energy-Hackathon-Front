@@ -39,8 +39,8 @@ export default function Dashboard() {
 
     return (<>
         <section style={{display:'flex', width:'80%',margin:'auto'}}>
-            <Streak/>
-            <Bonus/>
+            <Streak value={24}/>
+            <Bonus value={15}/>
         </section>
         <section style={{display:'flex', width:'80%',margin:'auto'}}>
         <div className="card" style={{flex:'1'}}>
