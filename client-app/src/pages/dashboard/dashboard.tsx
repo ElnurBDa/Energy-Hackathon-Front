@@ -3,7 +3,7 @@ import {Line} from 'react-chartjs-2';
 import './dashboard.css'
 import { Chart, registerables } from 'chart.js';
 import { Button } from "react-bootstrap";
-import { ManatKiloWattMax, ManatKiloWattMin, chartDatasApril, chartDatasAprilDays, convertDataDay, convertDataMonth, getTotal } from "../../data";
+import { ManatKiloWattMax, ManatKiloWattMin, chartDatasApril, chartDatasAprilDays, convertDataDay, convertDataMonth, getPrice, getTotal } from "../../data";
 Chart.register(...registerables);
 
 export default function Dashboard() {
@@ -13,8 +13,8 @@ export default function Dashboard() {
     const [total, setTotal] = useState(getTotal(chartDatasAprilDays[0].hours));
     
     const handleNChange = (newN:number) => {
-        if (newN > 30) setN(1);
-        else if (newN <1) setN(30);
+        if (newN > 30) setN(30);
+        else if (newN <1) setN(1);
         else setN(newN);
     }
 
@@ -27,7 +27,7 @@ export default function Dashboard() {
     useEffect(() => {
         if (mode) {
             setChartData(convertDataMonth(chartDatasApril));
-            setTotal(24*getTotal(chartDatasApril.days))  
+            setTotal(getTotal(chartDatasApril.days))  
         } else {
             setChartData(convertDataDay(chartDatasAprilDays[n-1]));
             setTotal(getTotal(chartDatasAprilDays[n-1].hours))  
@@ -55,13 +55,13 @@ export default function Dashboard() {
             </div>
             <div className="NOTTHECHART">
                 <Button className="btn btn-primary ripple-surface" onClick={() => setMode(+!mode)}>{mode?<>ayliq</>:<>gunluk</>} serfiyyat</Button>
-                {mode?<></>:<input type="number" value ={n} onChange={(e) => handleNChange(+(e.target.value))}/>}
+                {mode?<></>:<input className="inp" type="number" value ={n} onChange={(e) => handleNChange(+(e.target.value))}/>}
                 <h4 style={{left:'0px'}}>Total Energy:{total.toFixed(2)} kilowatt</h4>
-                <h4 style={{left:'0px'}}>Total Price: {(total>300? total*ManatKiloWattMax: total*ManatKiloWattMin).toFixed(2)} manat</h4>
+                <h4 style={{left:'0px'}}>Total Price: {(getPrice(total)).toFixed(2)} manat</h4> 
             </div>
         </div>
     </>)
 }
 
 
-// 
+//  i need to change ayliq total, cause it is wrong
