@@ -4,6 +4,9 @@ import './dashboard.css'
 import { Chart, registerables } from 'chart.js';
 import { Button } from "react-bootstrap";
 import { ManatKiloWattMax, ManatKiloWattMin, chartDatasApril, chartDatasAprilDays, convertDataDay, convertDataMonth, getPrice, getTotal } from "../../data";
+import Streak from "../../components/streak";
+import Bonus from "../../components/bonus";
+import Redeem from "../../components/redeem";
 Chart.register(...registerables);
 
 export default function Dashboard() {
@@ -35,7 +38,12 @@ export default function Dashboard() {
     },[mode, n])
 
     return (<>
-        <div className="card">
+        <section style={{display:'flex', width:'80%',margin:'auto'}}>
+            <Streak/>
+            <Bonus/>
+        </section>
+        <section style={{display:'flex', width:'80%',margin:'auto'}}>
+        <div className="card" style={{flex:'1'}}>
             <div className="THECHART">
                 <div className="chart">
                     <Line
@@ -60,6 +68,10 @@ export default function Dashboard() {
                 <h4 style={{left:'0px'}}>Total Price: {(getPrice(total)).toFixed(2)} manat</h4> 
             </div>
         </div>
+        </section>
+        <section style={{display:'flex', width:'80%',margin:'auto'}}>
+            <Redeem/>
+        </section>
     </>)
 }
 
