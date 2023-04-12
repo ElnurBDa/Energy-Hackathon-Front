@@ -4,17 +4,17 @@ import { FaBook, FaPhone, FaDollarSign } from 'react-icons/fa'
 
 const presents = [
     {
-        title: "Kitab kuponu",
-        logo: FaBook,
+        title: "15% endirim",
+        logo: FaDollarSign,
         price: 15
     },
     {
-        title: "Kontur",
-        logo: FaPhone,
+        title: "10% endirim",
+        logo: FaDollarSign,
         price: 5
     },
     {
-        title: "Pul",
+        title: "5% endirim",
         logo: FaDollarSign,
         price: 1
     },
