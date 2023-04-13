@@ -17,7 +17,7 @@ export const mainListItems = (
       <ListItemIcon>
         <DashboardIcon />
       </ListItemIcon>
-      <ListItemText primary="Dashboard" />
+      <ListItemText primary="Sərfiyyat Cədvəli" />
     </ListItemButton>
   </React.Fragment>
 );
@@ -25,7 +25,7 @@ export const mainListItems = (
 export const secondaryListItems = (
   <React.Fragment>
     <ListSubheader component="div" inset>
-      Quick Options
+      Kısa Keçidlər
     </ListSubheader>
     <ListItemButton component="a" href="/1">
       <ListItemIcon style={{color:'rgb(0,0,255)'}}>
