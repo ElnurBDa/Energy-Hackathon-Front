@@ -254,7 +254,7 @@ export function DashboardContent() {
                         ₼ {manat.toFixed(2)} 
                       </Typography>
                       <Typography component="p" variant="h6">
-                        Kw {kw}
+                        Kw {(kw || 1).toFixed(2)}
                       </Typography>
                       <Typography color="text.secondary" sx={{ flex: 1 }}>
                         on {day} Aprel, 2023

@@ -54,7 +54,7 @@ export default function Dashboard() {
                             legend:{position:'top'},
                             title:{
                                 display: true,
-                                text:"Energy Consumption",
+                                text:"Energy Consumption", 
                             }
                         }
                     }}
