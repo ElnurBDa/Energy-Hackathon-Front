@@ -257,7 +257,7 @@ export function DashboardContent() {
                         Kw {kw}
                       </Typography>
                       <Typography color="text.secondary" sx={{ flex: 1 }}>
-                        on {day} March, 2023
+                        on {day} Aprel, 2023
                       </Typography>
                     </React.Fragment>
                 </Paper>

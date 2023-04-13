@@ -10,7 +10,7 @@ function createData(time: string, amount?: number) {
 
 const data = [
   createData('January', 100),
-  createData('March', 250),
+  createData('Aprel', 250),
   createData('May', 0),
   createData('July', 0),
   createData('September', 0),

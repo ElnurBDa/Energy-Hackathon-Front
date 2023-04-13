@@ -18,7 +18,7 @@ export default function Deposits() {
         Kw 1,500.23 
       </Typography>
       <Typography color="text.secondary" sx={{ flex: 1 }}>
-        on 15 March, 2023
+        on 15 Aprel, 2023
       </Typography>
     </React.Fragment>
   );
