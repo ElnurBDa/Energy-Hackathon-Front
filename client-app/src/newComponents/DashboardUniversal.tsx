@@ -97,9 +97,13 @@ export function DashboardContent() {
   };
 
   const [day,setDay] = useState(4);
+  const [kw, setKw] = useState(data[day].map(({time,amount}) => amount).reduce((accumulator:any, currentValue) => accumulator + currentValue))
+  const [manat, setManat] = useState((kw || 1)*0.07)
 
   const handleChange = (d:number) => {
     setDay(d)
+    setKw(data[day].map(({time,amount}) => amount).reduce((accumulator:any, currentValue) => accumulator + currentValue))
+    setManat((kw || 1)*0.07)
     console.log(day);
   }
   const theme = useTheme();
@@ -247,10 +251,10 @@ export function DashboardContent() {
                       <React.Fragment>
                       <Title>Consumption total</Title>
                       <Typography component="p" variant="h4">
-                        ₼ 14.00 
+                        ₼ {manat.toFixed(2)} 
                       </Typography>
                       <Typography component="p" variant="h6">
-                        Kw 1,500.23 
+                        Kw {kw}
                       </Typography>
                       <Typography color="text.secondary" sx={{ flex: 1 }}>
                         on {day} March, 2023

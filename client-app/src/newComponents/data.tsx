@@ -12,15 +12,15 @@ function randomInteger(min:number, max:number) {
 
 function createDay() {
     return [
-        createData('00:00', randomInteger(100,200)),
-        createData('03:00', randomInteger(200,400)),
-        createData('06:00', randomInteger(300,500)),
-        createData('09:00', randomInteger(600,800)),
-        createData('12:00', randomInteger(900,1100)),
-        createData('15:00', randomInteger(1300,1500)),
-        createData('18:00', randomInteger(1300,1500)),
-        createData('21:00', randomInteger(200,600)),
-        createData('24:00', randomInteger(0,100)),
+        createData('00:00', randomInteger(10,20)),
+        createData('03:00', randomInteger(20,40)),
+        createData('06:00', randomInteger(30,50)),
+        createData('09:00', randomInteger(60,80)),
+        createData('12:00', randomInteger(90,110)),
+        createData('15:00', randomInteger(130,150)),
+        createData('18:00', randomInteger(130,150)),
+        createData('21:00', randomInteger(20,60)),
+        createData('24:00', randomInteger(0,10)),
     ]
 }
   

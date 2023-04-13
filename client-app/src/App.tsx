@@ -11,6 +11,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
+          <Route path="/" element={<DashboardUniversal />} />
           <Route path="0" element={<DashboardUniversal />} />
           <Route path="1" element={<Dashboard />} />
           <Route path="2" element={<DashboardMonth />} />
