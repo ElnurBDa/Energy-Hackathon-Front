@@ -22,6 +22,7 @@ import Chart from './Chart';
 import Deposits from './Deposits';
 import Orders from './Orders';
 import Limit from './Limit';
+import LightbulbIcon from '@mui/icons-material/Lightbulb';
 
 function Copyright(props: any) {
   return (
@@ -130,6 +131,23 @@ export function DashboardContent() {
                 <NotificationsIcon />
               </Badge>
             </IconButton>
+            <Typography
+              component="h1"
+              variant="h6"
+              color="inherit"
+              sx={{marginLeft:"20px"}}
+            >
+              Bonus:
+            </Typography>
+            <Typography
+              component="h1"
+              variant="h6"
+              color="inherit"
+              sx={{marginLeft:"10px"}}
+            >
+              {12}
+            </Typography>
+            <LightbulbIcon sx={{color:"yellow"}}/>
           </Toolbar>
         </AppBar>
         <Drawer variant="permanent" open={open}>
