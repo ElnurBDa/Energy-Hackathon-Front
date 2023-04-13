@@ -24,6 +24,7 @@ import { useTheme } from '@mui/material/styles';
 import { LineChart, Line, XAxis, YAxis, Label, ResponsiveContainer } from 'recharts';
 import Title from './Title';
 import { data } from './data';
+import Limit from './Limit';
 
 function Copyright(props: any) {
   return (
@@ -278,6 +279,12 @@ export function DashboardContent() {
                   max={30}
                 />
               </React.Fragment>
+                </Paper>
+              </Grid>
+              {/* Limit */}
+              <Grid item xs={12}>
+                <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
+                  <Limit/>
                 </Paper>
               </Grid>
             </Grid>

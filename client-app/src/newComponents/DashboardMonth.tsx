@@ -21,6 +21,7 @@ import { mainListItems, secondaryListItems } from './listItems';
 import Chart from './ChartMonth';
 import Deposits from './DepositsMonth';
 import Orders from './Orders';
+import Limit from './Limit';
 
 function Copyright(props: any) {
   return (
@@ -192,10 +193,10 @@ export function DashboardContent() {
                   <Deposits />
                 </Paper>
               </Grid>
-              {/* Recent Orders */}
+              {/* Limit */}
               <Grid item xs={12}>
                 <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
-                  <Orders />
+                  <Limit/>
                 </Paper>
               </Grid>
             </Grid>
