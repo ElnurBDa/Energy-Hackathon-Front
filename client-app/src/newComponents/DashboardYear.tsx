@@ -23,6 +23,7 @@ import Deposits from './DepositsYear';
 import Orders from './Orders';
 import Limit from './Limit';
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
+import BonusSystem from './BonusSystem';
 
 function Copyright(props: any) {
   return (
@@ -215,6 +216,12 @@ export function DashboardContent() {
               <Grid item xs={12}>
                 <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
                   <Limit/>
+                </Paper>
+              </Grid>
+              {/* Bonus Redemption */}
+              <Grid item xs={12}>
+                <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
+                  <BonusSystem/>
                 </Paper>
               </Grid>
             </Grid>
