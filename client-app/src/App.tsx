@@ -1,8 +1,9 @@
-import React from 'react';
 import './App.css';
-import Dashboard from './pages/dashboard/dashboard';
-import Home from './pages/home/home';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Dashboard from './newComponents/Dashboard';
+import DashboardMonth from './newComponents/DashboardMonth';
+import DashboardYear from './newComponents/DashboardYear';
+import DashboardUniversal from './newComponents/DashboardUniversal';
 
 
 function App() {
@@ -10,8 +11,10 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="0" element={<DashboardUniversal />} />
+          <Route path="1" element={<Dashboard />} />
+          <Route path="2" element={<DashboardMonth />} />
+          <Route path="3" element={<DashboardYear />} />
         </Routes>
       </BrowserRouter>
     </div>
