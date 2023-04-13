@@ -19,8 +19,8 @@ export default function Limit() {
       <Title>Set Limit</Title>
       <section style={{display:'flex',alignItems:'center', justifyContent:'center'}}>
       <TextField id="standard-basic" label="KiloWatt limit" variant="standard" type="number" sx={{ flex: 3 }}/>
-      <Button variant="contained" sx={{ marginLeft:"20px", marginRight:"20px" }}>Tesdiqle</Button>
-      <InfoIcon color="primary" sx={{ fontSize:"30px", marginLeft:"20px", marginRight:"20px" }}/>
+      <Button variant="contained" sx={{ marginLeft:"5px", marginRight:"5px" }}>Tesdiqle</Button>
+      <InfoIcon color="primary" sx={{ fontSize:"30px", marginLeft:"5px", marginRight:"5px" }}/>
       <p style={{flex:1}}>Set limit to your consumption to control energy flow</p> 
       </section>
     </React.Fragment>
