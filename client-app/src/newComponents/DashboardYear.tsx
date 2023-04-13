@@ -125,7 +125,7 @@ export function DashboardContent() {
               noWrap
               sx={{ flexGrow: 1 }}
             >
-              Dashboard
+              Sərfiyyat Cədvəli
             </Typography>
             <IconButton color="inherit">
               <Badge badgeContent={4} color="secondary">

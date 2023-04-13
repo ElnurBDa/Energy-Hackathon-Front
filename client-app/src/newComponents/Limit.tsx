@@ -16,12 +16,12 @@ function preventDefault(event: React.MouseEvent) {
 export default function Limit() {
   return (
     <React.Fragment>
-      <Title>Set Limit</Title>
+      <Title>Limit təyin et</Title>
       <section style={{display:'flex',alignItems:'center', justifyContent:'center'}}>
-      <TextField id="standard-basic" label="KiloWatt limit" variant="standard" type="number" sx={{ flex: 3 }}/>
-      <Button variant="contained" sx={{ marginLeft:"5px", marginRight:"5px" }}>Tesdiqle</Button>
+      <TextField id="standard-basic" label="KiloWatt" variant="standard" type="number" sx={{ flex: 3 }}/>
+      <Button variant="contained" sx={{ marginLeft:"5px", marginRight:"5px" }}>Təsdiqlə</Button>
       <InfoIcon color="primary" sx={{ fontSize:"30px", marginLeft:"5px", marginRight:"5px" }}/>
-      <p style={{flex:1}}>Set limit to your consumption to control energy flow</p> 
+      <p style={{flex:1}}>Enerji sərfiyyatına qənaət üçün limit</p> 
       </section>
     </React.Fragment>
   );

@@ -23,7 +23,7 @@ export default function Chart() {
 
   return (
     <React.Fragment>
-      <Title>Today</Title>
+      <Title>Cari İl</Title>
       <ResponsiveContainer>
         <LineChart
           data={data}
@@ -52,7 +52,7 @@ export default function Chart() {
                 ...theme.typography.body1,
               }}
             >
-              Consumption (Kw)
+              Sərfiyyat (Kw)
             </Label>
           </YAxis>
           <Line

@@ -10,7 +10,7 @@ function preventDefault(event: React.MouseEvent) {
 export default function Deposits() {
   return (
     <React.Fragment>
-      <Title>Consumption total</Title>
+      <Title>Ümumi Sərfiyyat</Title>
       <Typography component="p" variant="h4">
         ₼ 1,024.00 
       </Typography>
@@ -18,7 +18,7 @@ export default function Deposits() {
         Kw 6,500.00 
       </Typography>
       <Typography color="text.secondary" sx={{ flex: 1 }}>
-        on Aprel, 2023
+        Aprel, 2023
       </Typography>
     </React.Fragment>
   );

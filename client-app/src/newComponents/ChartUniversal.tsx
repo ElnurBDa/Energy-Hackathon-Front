@@ -10,7 +10,7 @@ export default function Chart(value:any) {
 
   return (
     <React.Fragment>
-      <Title>Today</Title>
+      <Title></Title>
       <ResponsiveContainer>
         <LineChart
           data={data[+value]}

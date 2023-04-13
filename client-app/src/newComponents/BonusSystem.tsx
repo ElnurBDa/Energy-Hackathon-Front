@@ -18,7 +18,7 @@ function preventDefault(event: React.MouseEvent) {
 export default function BonusSystem() {
   return (
     <React.Fragment>
-      <Title>Bulb Redemption</Title>
+      <Title>Bonus</Title>
       <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
       {[{discount:2,price:15}, {discount:5,price:30},{discount:10,price:70}].map(({discount, price}) => (
         <ListItem

@@ -22,7 +22,7 @@ export default function ChartMonth() {
 
   return (
     <React.Fragment>
-      <Title>Today</Title>
+      <Title>Cari Ay</Title>
       <ResponsiveContainer>
         <LineChart
           data={newdata}
@@ -51,7 +51,7 @@ export default function ChartMonth() {
                 ...theme.typography.body1,
               }}
             >
-              Consumption (Kw)
+              Sərfiyyat (Kw)
             </Label>
           </YAxis>
           <Line

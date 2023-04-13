@@ -31,25 +31,25 @@ export const secondaryListItems = (
       <ListItemIcon style={{color:'rgb(0,0,255)'}}>
         <AssignmentIcon />
       </ListItemIcon>
-      <ListItemText primary="Current Day" />
+      <ListItemText primary="Cari Gün" />
     </ListItemButton>
     <ListItemButton component="a" href="/2">
       <ListItemIcon style={{color:'rgb(100,100,255)'}}>
         <AssignmentIcon />
       </ListItemIcon>
-      <ListItemText primary="Current Month" />
+      <ListItemText primary="Cari Ay" />
     </ListItemButton>
     <ListItemButton component="a" href="/3">
       <ListItemIcon style={{color:'rgb(150,150,255)'}}>
         <AssignmentIcon />
       </ListItemIcon>
-      <ListItemText primary="Current Year" />
+      <ListItemText primary="Cari İl" />
     </ListItemButton>
     <ListItemButton component="a" href="/0">
       <ListItemIcon style={{color:'rgb(170,170,255)'}}>
         <AssignmentIcon />
       </ListItemIcon>
-      <ListItemText primary="Universal" />
+      <ListItemText primary="Ümumi" />
     </ListItemButton>
   </React.Fragment>
 );

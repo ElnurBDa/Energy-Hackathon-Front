@@ -141,7 +141,7 @@ export function DashboardContent() {
               noWrap
               sx={{ flexGrow: 1 }}
             >
-              Dashboard
+              Sərfiyyat Cədvəli
             </Typography>
             <IconButton color="inherit">
               <Badge badgeContent={4} color="secondary">
@@ -213,7 +213,7 @@ export function DashboardContent() {
                   }}
                 >
                   <React.Fragment>
-      <Title>Universal</Title>
+      <Title>{day} Aprel</Title>
       <ResponsiveContainer>
         <LineChart
           data={data[day]}
@@ -242,7 +242,7 @@ export function DashboardContent() {
                 ...theme.typography.body1,
               }}
             >
-              Consumption (Kw)
+              Sərfiyyat (Kw)
             </Label>
           </YAxis>
           <Line
@@ -269,7 +269,7 @@ export function DashboardContent() {
                   }}
                 >
                       <React.Fragment>
-                      <Title>Consumption total</Title>
+                      <Title>Ümumi Sərfiyyat</Title>
                       <Typography component="p" variant="h4">
                         ₼ {manat.toFixed(2)} 
                       </Typography>
@@ -277,7 +277,7 @@ export function DashboardContent() {
                         Kw {(kw || 1).toFixed(2)}
                       </Typography>
                       <Typography color="text.secondary" sx={{ flex: 1 }}>
-                        on {day} Aprel, 2023
+                        {day} Aprel, 2023
                       </Typography>
                     </React.Fragment>
                 </Paper>
@@ -286,7 +286,7 @@ export function DashboardContent() {
               <Grid item xs={12}>
                 <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
                 <React.Fragment>
-                <Title>Change days</Title>
+                <Title>Günləri Dəyiş</Title>
                 <Slider
                   aria-label="Days"
                   value={day}
