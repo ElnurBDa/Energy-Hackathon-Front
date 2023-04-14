@@ -24,6 +24,7 @@ import Orders from './Orders';
 import Limit from './Limit';
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import BonusSystem from './BonusSystem';
+import LastYear from './LastYear';
 
 function Copyright(props: any) {
   return (
@@ -210,6 +211,12 @@ export function DashboardContent() {
                   }}
                 >
                   <Deposits />
+                </Paper>
+              </Grid>
+              {/* LastYear */}
+              <Grid item xs={12}>
+                <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
+                  <LastYear/>
                 </Paper>
               </Grid>
               {/* Limit */}
