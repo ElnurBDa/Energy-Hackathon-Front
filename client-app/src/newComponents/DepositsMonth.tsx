@@ -12,10 +12,10 @@ export default function Deposits() {
     <React.Fragment>
       <Title>Ümumi Sərfiyyat</Title>
       <Typography component="p" variant="h4">
-        ₼ 1,024.00 
+        ₼ 23.59 
       </Typography>
       <Typography component="p" variant="h6">
-        Kw 6,500.00 
+        Kw 277.34 
       </Typography>
       <Typography color="text.secondary" sx={{ flex: 1 }}>
         Aprel, 2023
