@@ -29,7 +29,7 @@ function Copyright(props: any) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
+      <Link color="inherit" href="#">
         Energy Mavericks
       </Link>{' '}
       {new Date().getFullYear()}
@@ -218,13 +218,13 @@ export function DashboardContent() {
                   <Limit/>
                 </Paper>
               </Grid>
-            </Grid>
               {/* Bonus Redemption */}
               <Grid item xs={12}>
                 <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
                   <BonusSystem/>
                 </Paper>
               </Grid>
+            </Grid>
             <Copyright sx={{ pt: 4 }} />
           </Container>
         </Box>

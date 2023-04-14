@@ -32,7 +32,7 @@ function Copyright(props: any) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
+      <Link color="inherit" href="#">
         Energy Mavericks
       </Link>{' '}
       {new Date().getFullYear()}
@@ -109,10 +109,13 @@ export function DashboardContent() {
     setDay(d)
     setKw(data[day].map(({time,amount}) => amount).reduce((accumulator:any, currentValue) => accumulator + currentValue))
     setManat((kw || 1)*0.07)
-    setTotalKw(day*9.573);
   }
+
   const theme = useTheme();
   
+  useEffect(()=>{
+    setTotalKw(day*9.573);    
+  },[day])
 
   return (
     <ThemeProvider theme={mdTheme}>
@@ -288,7 +291,7 @@ export function DashboardContent() {
               <Grid item xs={12}>
                 <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
                 <React.Fragment>
-                <Title>Günləri Dəyiş</Title>
+                <Title>Cari günə kimi olan sərfiyyat</Title>
                 <Slider
                   aria-label="Days"
                   value={day}
@@ -299,7 +302,6 @@ export function DashboardContent() {
                   min={1}
                   max={30}
                 />
-                <Title>Cari gününəcən olan sərfiyyat {day}</Title>
                 <Typography component="p" variant="h4">
                   ₼ {(totalKw*0.07).toFixed(2)}
                 </Typography>
