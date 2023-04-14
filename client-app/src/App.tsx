@@ -4,6 +4,8 @@ import Dashboard from './newComponents/Dashboard';
 import DashboardMonth from './newComponents/DashboardMonth';
 import DashboardYear from './newComponents/DashboardYear';
 import DashboardUniversal from './newComponents/DashboardUniversal';
+import Advice from './newComponents/Advice';
+import AssistantIcon from '@mui/icons-material/Assistant';
 
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
           <Route path="1" element={<Dashboard />} />
           <Route path="2" element={<DashboardMonth />} />
           <Route path="3" element={<DashboardYear />} />
+          <Route path="advice" element={<Advice />} />
         </Routes>
       </BrowserRouter>
     </div>

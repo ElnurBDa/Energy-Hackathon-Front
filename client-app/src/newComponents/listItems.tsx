@@ -10,14 +10,21 @@ import BarChartIcon from '@mui/icons-material/BarChart';
 import LayersIcon from '@mui/icons-material/Layers';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import { Navigate } from 'react-router-dom';
+import AssistantIcon from '@mui/icons-material/Assistant';
 
 export const mainListItems = (
   <React.Fragment>
-    <ListItemButton>
+  <ListItemButton component="a" href="/0">
+    <ListItemIcon>
+      <DashboardIcon />
+    </ListItemIcon>
+    <ListItemText primary="Sərfiyyat Cədvəli" />
+  </ListItemButton>
+    <ListItemButton component="a" href="/advice">
       <ListItemIcon>
-        <DashboardIcon />
+        <AssistantIcon />
       </ListItemIcon>
-      <ListItemText primary="Sərfiyyat Cədvəli" />
+      <ListItemText primary="Tövsiyələr" />
     </ListItemButton>
   </React.Fragment>
 );
