@@ -24,6 +24,7 @@ import Orders from './Orders';
 import Limit from './Limit';
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import BonusSystem from './BonusSystem';
+import { useEffect, useState } from 'react';
 
 function Copyright(props: any) {
   return (

@@ -99,15 +99,17 @@ export function DashboardContent() {
     setOpen(!open);
   };
 
-  const [day,setDay] = useState(4);
+  const [day,setDay] = useState(15);
   const [kw, setKw] = useState(data[day].map(({time,amount}) => amount).reduce((accumulator:any, currentValue) => accumulator + currentValue))
   const [manat, setManat] = useState((kw || 1)*0.07)
+
+  const [totalKw, setTotalKw] = useState(day*9.573);
 
   const handleChange = (d:number) => {
     setDay(d)
     setKw(data[day].map(({time,amount}) => amount).reduce((accumulator:any, currentValue) => accumulator + currentValue))
     setManat((kw || 1)*0.07)
-    console.log(day);
+    setTotalKw(day*9.573);
   }
   const theme = useTheme();
   
@@ -282,7 +284,7 @@ export function DashboardContent() {
                     </React.Fragment>
                 </Paper>
               </Grid>
-              {/* Recent Orders */}
+              {/* Slider */}
               <Grid item xs={12}>
                 <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
                 <React.Fragment>
@@ -297,6 +299,13 @@ export function DashboardContent() {
                   min={1}
                   max={30}
                 />
+                <Title>Cari gününəcən olan sərfiyyat {day}</Title>
+                <Typography component="p" variant="h4">
+                  ₼ {(totalKw*0.07).toFixed(2)}
+                </Typography>
+                <Typography component="p" variant="h6">
+                  Kw {totalKw.toFixed(2)}
+                </Typography>
               </React.Fragment>
                 </Paper>
               </Grid>

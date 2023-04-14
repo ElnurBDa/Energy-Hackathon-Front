@@ -9,12 +9,12 @@ function createData(time: string, amount?: number) {
 }
 
 const data = [
-  createData('January', 100),
+  createData('Yanvar', 100),
   createData('Aprel', 250),
   createData('May', 0),
-  createData('July', 0),
-  createData('September', 0),
-  createData('November', 0),
+  createData('Iyul', 0),
+  createData('Sentyabr', 0),
+  createData('Noyabr', 0),
   
 ];
 
